@@ -14,7 +14,7 @@ nav {
 }
   
 nav ul {
-    max-width: 33%;
+    max-width: 50%;
     list-style-type: none;
     /* padding: 0; */
 }
@@ -25,11 +25,25 @@ nav ul li {
 }
 
 nav ul input {
-    max-width: 33%;
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 3px rgba(66,66,66,.22);
+}
+
+nav ul input:focus {
+    outline:none;
 }
 
 nav h1 {
-    max-width: 33%;
+    max-width: 25%;
     color: #f3f2c5;
     font-weight: bold;
 }
@@ -45,6 +59,67 @@ body {
     background-size: cover;
 }
 
+button {
+    color: white;
+    background-color: teal;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 6px 12px;
+}
+
+.social {
+    position: absolute;
+    top: 400px;
+    background-color: #efe7e75c;
+}
+
 .social ul li {
-    color:aquamarine;
+    margin: 1em 0em;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .leftPanel {
+    flex-direction: column;
+    max-width: 50%;
+    padding: 6em;
+}
+
+.container .leftPanel div {
+    padding: 20px 8px;
+    background-color: #1f1f1f2f;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.rightPanel {
+    max-width: 50%;
+    padding: 6em;
+}
+
+.rightPanel > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.rightPanel .card {
+    background-color: white;
+    padding: 20px;
+    margin: 1em;
+    border-radius: 4px;
+}
+
+.rightPanel img {
+    max-width: 50%;
+}
+
+.titleCard {
+    padding: .5em;
+    border-radius: 4px;
+    width: 100%;
+    background-color: teal;
+    color: white;
 }
