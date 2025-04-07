@@ -80,7 +80,7 @@ function findDestinations() {
 
 btnSearch.addEventListener('click', findDestinations);
 btnReset.addEventListener('click', function() {
-    btnSearch.value = '';
+    document.getElementById('destinationInput').value = '';
     document.getElementById('searchResults').innerHTML = '';
 });
 

@@ -1,3 +1,6 @@
+/*
+ *  General Style
+ */
 *{
     margin: 0;
     padding: 0;
@@ -44,13 +47,13 @@ nav ul input:focus {
 
 nav h1 {
     max-width: 25%;
-    color: #f3f2c5;
+    color: white;
     font-weight: bold;
 }
 
 nav a {
     text-decoration: none;
-    color: #f3f2c5;
+    color: white;
     font-weight: bold;
 }
 
@@ -70,13 +73,17 @@ button {
 
 .social {
     position: absolute;
-    top: 400px;
-    background-color: #efe7e75c;
+    top: 200px;
+    background-color: #1f1f1f2f;
 }
 
 .social ul li {
     margin: 1em 0em;
 }
+
+/*
+ *  Index/Recommendation Page Styling
+ */
 .container {
     display: flex;
     flex-direction: row;
@@ -122,4 +129,86 @@ button {
     width: 100%;
     background-color: teal;
     color: white;
+}
+
+/*
+ * About Us Page Styling
+ */
+.aboutUs {
+    padding: 6em;
+}
+
+.aboutUs h1, .aboutUs > div {
+    padding: 20px 8px;
+    background-color: #1f1f1f2f;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.aboutUs .ourTeam {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutUs .ourTeam .team {
+    display: inherit;
+    flex-direction: row;
+}
+
+.person {
+    display: inherit;
+    flex-direction: column;
+    margin: 1em;
+    border: white 1px;
+    border-radius: 4px;
+}
+
+/*
+ *  Contact Page Styling
+ */
+.contactUs {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactUs .leftPanel ,
+.contactUs .rightPanel {
+    width: 50%;
+    padding: 6em;
+}
+
+.contactUs h1 {
+    padding: 20px 8px;
+    background-color: #1f1f1f2f;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.contactUs .rightPanel .contactForm {
+    background-color: #31313142;
+}
+
+.contactForm * {
+    margin: 0.5em;
+}
+
+.contactForm label {
+    color: white;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #ffffff3b;
+    color: #000000;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 3px rgba(66,66,66,.22);
+}
+.contactForm input:focus {
+    outline:none;
 }
